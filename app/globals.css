@@ -16,12 +16,14 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@font-face {
+  font-family: "yekan";
+  font-style: normal;
+  src: local("yekan"),
+    url("../public/fonts/YekanBakh-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+* {
+  font-family: "yekan" !important;
 }
